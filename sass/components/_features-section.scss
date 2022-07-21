@@ -1,0 +1,41 @@
+.section-features {
+  padding-top: 94px;
+}
+
+.features-list {
+  display: flex;
+
+  &__item {
+    width: 270px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__photo {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--portfolio-button-background);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: var(--general-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--paragraph-text-color);
+  }
+}

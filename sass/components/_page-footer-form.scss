@@ -1,0 +1,71 @@
+.footer-sign {
+  
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-addres-button-text-color);
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    background-color: var(--footer-background-color);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--hero-addres-button-text-color);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: var(--hero-addres-button-text-color);
+    background-color: var(--accent-colour);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: 1px transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+    padding: 10px 29px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 28px;
+  }
+}
+
+.footer-sign--box {
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
