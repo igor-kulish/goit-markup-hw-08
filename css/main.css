@@ -440,9 +440,9 @@ img {
   .mobile-menu-container {
     position: absolute;
     top: 0;
+    display: none;
     left: 0;
     width: 100%;
-    display: block;
     min-height: 796px;
     padding: 48px 40px;
     background-color: var(--header-background-color);
@@ -451,7 +451,7 @@ img {
     z-index: 999;
   }
   .mobile-menu-container.is-open {
-    display: none;
+    display: block;
   }
   .mobile-menu-nav {
     margin-bottom: 306px;
