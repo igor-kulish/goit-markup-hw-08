@@ -130,6 +130,24 @@ body {
 
 @media screen and (max-height: 740px) {
   .mobile-menu-nav {
+    margin-bottom: 200px;
+  }
+  .mobile-menu-contacts {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .mobile-menu-nav {
+    margin-bottom: 100px;
+  }
+  .mobile-menu-contacts {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .mobile-menu-nav {
     margin-bottom: 20px;
   }
   .mobile-menu-contacts {
