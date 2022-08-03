@@ -414,20 +414,22 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
-  .mobile-menu-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
+  .mobile-menu-button-open,
+.mobile-menu-button-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
     margin-left: auto;
     cursor: pointer;
-  }
-  body {
-    position: relative;
   }
   .icon-mobile-menu:hover,
 .icon-mobile-menu:focus,
@@ -438,20 +440,24 @@ img {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu-container {
-    position: absolute;
-    top: 0;
     display: none;
+    top: 0;
     left: 0;
     width: 100%;
-    min-height: 796px;
-    padding: 48px 40px;
+    height: 100%;
+    padding: 10px 10px 48px 40px;
     background-color: var(--header-background-color);
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 999;
   }
   .mobile-menu-container.is-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: block;
+    overflow-y: scroll;
   }
   .mobile-menu-nav {
     margin-bottom: 306px;
@@ -514,7 +520,8 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu-button,
+  .mobile-menu-button-open,
+.mobile-menu-button-close,
 .mobile-menu-nav,
 .mobile-menu-contacts,
 .mobile-menu-social {
@@ -1100,10 +1107,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
-  position: relative;
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1273,12 +1276,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-portfolio__list {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
 }
 .section-portfolio__button {
