@@ -42,6 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     display: block;
     overflow-y: scroll;
   }
@@ -96,6 +97,7 @@ body {
 
   .mobile-menu-social {
     display: flex;
+    justify-content: left;
     flex-wrap: wrap;
   }
 
@@ -120,5 +122,14 @@ body {
   .mobile-menu-contacts,
   .mobile-menu-social {
     display: none;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .mobile-menu-nav {
+    margin-bottom: 20px;
+  }
+  .mobile-menu-contacts {
+    margin-bottom: 15px;
   }
 }
